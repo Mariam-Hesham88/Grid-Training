@@ -1,0 +1,498 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "learn-more learn-more"
+        "iphone iphone"
+        "keyboard keyboard"
+        "game game"
+        "download download"
+        "twitter twitter"
+        "best-choice best-choice"
+        "icloud icloud"
+        "popular popular"
+        "tv tv";
+}
+
+.iphone {
+    grid-area: iphone;
+    padding: 40px 40px 0 40px;
+    background-color: #fff;
+    position: relative;
+}
+
+.iphone .caption {
+    padding: 20px;
+}
+
+.iphone .img {
+    width: 60%;
+    margin: auto;
+    position: relative;
+    bottom: 0;
+}
+
+.iphone .img img {
+    width: 100%;
+    display: block;
+}
+
+.iphone p {
+    color: rgb(159, 163, 167);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+}
+
+.iphone span {
+    color: rgb(159, 163, 167);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.iphone h2 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 5px 0;
+}
+
+.keyboard {
+    grid-area: keyboard;
+    text-align: center;
+    background-color: tomato;
+    padding: 48px 0;
+}
+
+.keyboard .img {
+    width: 80%;
+    margin: auto;
+}
+
+.keyboard img {
+    width: 100%;
+    display: block;
+}
+
+.keyboard h2 {
+    color: rgb(255, 251, 251);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.keyboard span {
+    color: rgb(255, 200, 10);
+    font-family: "open sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.learn-more {
+    grid-area: learn-more;
+    text-align: center;
+    padding: 40px 48px 0 48px;
+    background-color: #F7F8F9;
+}
+
+.learn-more p {
+    color: rgb(159, 163, 167);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.learn-more h2 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 60px;
+    padding: 10px 0;
+}
+
+.learn-more a {
+    color: rgb(39, 185, 194);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.download {
+    grid-area: download;
+    padding: 48px 48px 0 48px;
+    background-color: #fff;
+}
+
+.download .card {
+    width: 100%;
+    padding: 48px 48px 0 48px;
+    position: relative;
+}
+
+.download .img {
+    width: 80%;
+    margin: auto;
+}
+
+.download img {
+    width: 100%;
+    display: block;
+}
+
+.download h2 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    padding: 10px 0;
+}
+
+.download span {
+    color: rgb(159, 163, 167);
+    font-family: "Montserrat";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
+.download p {
+    color: rgb(159, 163, 167);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 10px 0;
+}
+
+.download a {
+    text-decoration: none;
+    color: rgb(39, 185, 194);
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.best-choice {
+    grid-area: best-choice;
+    padding: 48px 0;
+    background-color: #93b6b7;
+    background-image: url(../imges/UX.png);
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    position: relative;
+}
+
+.best-choice span {
+    color: #fff;
+    font-family: "open sans";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 20px;
+    padding: 0 10px;
+    background-color: #fa684f;
+    position: absolute;
+    left: 30px;
+    top: 20px;
+    border-radius: 5px;
+}
+
+.best-choice h2 {
+    text-align: center;
+    color: #fff;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    padding: 10px 0;
+}
+
+.best-choice .img {
+    width: 80%;
+    margin: auto;
+    position: absolute;
+    bottom: 0;
+}
+
+.best-choice img {
+    width: 100%;
+    display: block;
+}
+
+.icloud {
+    grid-area: best-choice;
+    padding: 48px 0px;
+    text-align: center;
+    background-color: #8f76bc;
+}
+
+.icloud .card {
+    width: 100%;
+}
+
+.icloud .card-1 {
+    width: 100%;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.icloud .card-1 span {
+    color: #fff;
+    font-family: "open sans";
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 23px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(#eee, #eee, #eee, 0.5);
+}
+
+.icloud .card-1 i {
+    color: rgb(255, 200, 10);
+}
+
+.icloud .card-1 .img {
+    width: 80%;
+    margin: auto;
+}
+
+.icloud .card-1 img {
+    width: 100%;
+    display: block;
+}
+
+.icloud h2 {
+    color: #fff;
+    font-family: "Arvo";
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 36px;
+    padding: 20px 0;
+}
+
+.icloud p {
+    color: #fff;
+    font-family: "open sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-bottom: 20px;
+}
+
+.icloud button {
+    color: rgb(0, 0, 0);
+    font-family: "open sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+    background-color: rgb(255, 200, 10);
+    border-radius: 24px;
+    border: 0;
+    padding: 10px 15px;
+}
+
+.game {
+    grid-area: game;
+    text-align: center;
+    padding: 48px 0;
+    background-color: #fff;
+}
+
+.game .img {
+    width: 80%;
+    margin: auto;
+}
+
+.game img {
+    width: 100%;
+    display: block;
+}
+
+.game h2 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 20px;
+}
+
+.game span {
+    color: rgb(39, 185, 194);
+    font-family: "open sans";
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+.twitter {
+    grid-area: twitter;
+    text-align: center;
+    padding: 48px;
+    background-color: #38d5f4;
+}
+
+.twitter div {
+    width: 80%;
+    margin: auto;
+    border-radius: 50%;
+    padding: 20px;
+    background-color: #44cbe7;
+}
+
+.twitter .img {
+    width: 50%;
+}
+
+.twitter img {
+    width: 100%;
+    display: block;
+}
+
+.twitter h2 {
+    color: #fff;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+.popular {
+    grid-area: popular;
+    text-align: center;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.popular span {
+    color: #fff;
+    font-family: "Open Sans";
+    font-size: 8px;
+    font-weight: 700;
+    line-height: 20px;
+    background-color: rgb(75, 168, 75);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.popular h2 {
+    color: rgb(51, 51, 51);
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+    padding-top: 5px;
+}
+
+.tv {
+    grid-area: tv;
+    padding: 48px;
+    text-align: center;
+    background-color: rgb(51, 51, 51);
+}
+
+.tv .img {
+    width: 50%;
+    margin: auto;
+}
+
+.tv .img img {
+    width: 100%;
+    display: block;
+}
+
+.tv h2 {
+    color: #fff;
+    font-family: "Arvo";
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 32px;
+}
+
+@media screen and (min-width : 1000px) {
+
+    /* grid */
+    .container {
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "iphone iphone learn-more learn-more"
+            "keyboard download download icloud"
+            "game best-choice best-choice icloud"
+            "twitter popular tv tv";
+    }
+
+    .twitter {grid-area: twitter;}
+
+    .popular {grid-area: popular;}
+
+    .tv {grid-area: tv;}
+
+    .ipone {grid-area: ipone;}
+
+    .keyboard {grid-area: keyboard;}
+
+    .game {grid-area: game;}
+
+    .icloud {grid-area: icloud;}
+
+    .learn-more {grid-area: learn-more;}
+
+    .download {grid-area: download;}
+
+    .best-choice {grid-area: best-choice;}
+
+    .iphone,
+    .download,
+    .tv{
+        display: flex;
+        flex-wrap: nowrap;
+        padding: 0 48px;
+    }
+
+    .tv{
+        position: relative;
+    }
+
+    .tv img{
+        width: 30%;
+        margin: 0;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+
+    .tv h2{
+        padding-top: 100px;
+    }
+}
